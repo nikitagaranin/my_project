@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Обо мне</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+<link href="css/mycss.css" rel="stylesheet">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script> 
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+</head>
+<body class="body_image">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark"> 
+  <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Мои проекты </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="railway.html">Модернизация КТС</a> <a class="dropdown-item" href="milling.html">Проектирование НФС</a> <a class="dropdown-item" href="tech-process.html">Разработка тех.документации</a> <a class="dropdown-item" href="machining.html">Механическая обработка</a> <a class="dropdown-item" href="#">Разное</a> 
+          <!--
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a> 
+--> 
+        </div>
+      </li>
+      <li class="nav-item active"> <a class="nav-link" href="about.html">Обо мне <span class="sr-only">(current)</span></a> </li>
+      <!--          <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>--> 
+      <!--          <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">&nbsp;поиск</button>
+    </form>
+  </div>
+</nav>
+<header>
+  <div class="jumbotron my_color1">
+    <div class="container">
+      <div class="row">
+        <div class="bg-light border col-xl-12">
+          <h4>Краткая биография</h4>
+          <div class="float-left"> <img src="images/img_about.png" class="float-left" alt="Гаранин Никита Михайлович" style="padding: 10px" height="200px">
+            <div style="padding-top: 10px;">
+              <p class="text-justify">Родился в Москве в 1987 г, в школьные годы серьёзно увлекался программированием на delphi и assembler с 1999 по 2005 г. Неоднократно выставлял программы на конкурс в доме научно-технического творчества молодежи (ДНТТМ).</p>
+              <p class="text-justify">После окончания службы в армии поступил в СТАНКИН. Параллельно учился и работал. В 2014 г, окончил обучение по специализации технология и менеджмент в машиностроительном производстве.</p>
+              <p class="text-justify">Стремлюсь к повышению квалификации, посещаю тематические выставки и форумы, связанные с развитием робототехники, автоматизации и цифровизации производств. </p>
+            </div>
+          </div>
+          <h4>Резюме</h4>
+          <p><a class="button14" href="https://drive.google.com/uc?export=download&id=1kQnKIsX3phE6OU8nHmqxlWWiYsAzql04" download target="_blank" role="button">Сохранить в формате WORD</a></p>
+          <p><a class="button14" href="https://drive.google.com/uc?export=download&id=11xu3zeDWkDQ3wlSRrTMixZhYLfc9xfNU" download target="_blank" role="button">Сохранить в формате PDF</a></p>
+          <h4>Перечень работ оказываемых на фрилансе</h4>
+          <ol>
+            <li>Проектирование изделий для машиностроительной и приборостроительной отрасли;</li>
+            <li>Модернизация оборудования “под ключ”;</li>
+            <li>Разработка технологических программ для металлообрабатывающего оборудования;</li>
+            <li>Пуско-наладочные работы. Ввод оборудования в эксплуатацию;</li>
+            <li>Программирование промышленных контроллеров и панелей оператора;</li>
+          </ol>
+          <h4>Контакты</h4>
+          <p>По вопросам сотрудничества Вы можете связаться со мной по указанным контактам</p>
+		  <p>email: <a href="mailto:garaninengineer@gmail.com">garaninengineer@gmail.com</a></p>
+          <p>Тел.: 8(926)931-37-12  (c 9:00 до 20:00 по МСК)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<footer class="text-center my_footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © <a href="index.html">Garanin Nikita</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.3.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.3.1.js"></script> 
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Модернизация КТС</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+<link href="css/mycss.css" rel="stylesheet">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script> 
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script> 
+<script src="js/jquery.fancybox.min.js"></script>
+</head>
+<body class="body_image">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark"> 
+  <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Мои проекты </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="railway.html">Модернизация КТС</a> <a class="dropdown-item" href="milling.html">Проектирование НФС</a> <a class="dropdown-item" href="tech-process.html">Разработка тех.документации</a> <a class="dropdown-item" href="machining.html">Механическая обработка</a> <a class="dropdown-item" href="#">Разное</a> 
+          <!--
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a> 
+--> 
+        </div>
+      </li>
+      <li class="nav-item active"> <a class="nav-link" href="about.html">Обо мне <span class="sr-only">(current)</span></a> </li>
+      <!--          <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>--> 
+      <!--          <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">&nbsp;поиск</button>
+    </form>
+  </div>
+</nav>
+<header>
+  <div class="col-lg-12 mb-4 mt-2 text-center">
+    <h3 class="header-h3">Проект модернизации колесотокарного станка</h3>
+    <h3 class="header-h3">фирмы Rafamet модели ubb112n&nbsp;</h3>
+  </div>
+</header>
+<section class="common toc col-xl-5" data-key="toc">
+  <div class="header">Содержание</div>
+  <div class="content">
+    <ul>
+      <ol>
+        <li><a href="#about_project">Общие сведения</a></li>
+        <li><a href="#trebov">Требования заказчика к АСУ ТП</a></li>
+        <li><a href="#razrab_tz">Разработка технического задания</a></li>
+        <li><a href="#tkp_project">Технико–экономическое обоснование проекта</a></li>
+        <li><a href="#razrab_doc">Разработка проектной документации</a></li>
+        <li><a href="#razrab_soft">Разработка П.О</a></li>
+        <li><a href="#pnr_stanka">Пусконаладочные работы </a></li>
+        <li><a href="#vvod_stanka">Ввод и сдача в эксплуатацию</a></li>
+        <li><a href="#itogi">Итоги</a></li>
+        <li><a href="#arhiv">Архив</a></li>
+      </ol>
+    </ul>
+  </div>
+</section>
+<div class="container">
+  <h4 id="about_project" class="text-center">Общие сведения </h4>
+  <p class="text-justify">В конце 70-х , начале 80-х годов в&nbsp; ремонтных депо МПС СССР находилось в эксплуатации более 2500 ед. колесотокарных станков различных модификаций. Основные поставщики заводов на тот момент были станкостроительные заводы RAFAMET (Польша) и КЗТС (Украина).</p>
+  <p class="text-justify">Технические характеристики станков поставляемых на тот момент времени удовлетворяли требованиям ремонтных депо СССР.&nbsp; &nbsp;Станки обеспечивали необходимую точность и жесткость при обработки колесных пар. В тоже время станки имели существенные ограничения по технологическим возможностям , гибкости и скорости переналадки.&nbsp;</p>
+  <p class="text-justify">&nbsp;Начиная с 1991 года и до начала 2000-х  поставки новых станков в ремонтные депо&nbsp; почти полностью прекратились. Станочный фонд ремонтных депо на сегодняшний день состоит из станков возраст которых превышает 20 лет.&nbsp; Таких станков более 60% от общего числа станочного парка. Это станки которые отработали свой эксплуатационный ресурс.&nbsp;</p>
+  <p class="text-justify">Волна модернизации началась примерно с 2005 года . Это привело к разным схемам модернизации с применением ЧПУ , сервоприводов, преобразователей частоты , современной пускозащитной аппаратуры. Как результат уменьшилось количество отказов , сократилось время на наладку оборудования , повысилась точность обработки колесных пар и производительность.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+  <p class="text-justify">Стоит отметить , что&nbsp; &nbsp; станки прошедшие модернизацию могут работать ещё до 10..15 лет. В виду этого вопрос&nbsp; модернизации оборудования на сегодняшний день актуален.&nbsp; &nbsp; &nbsp;</p>
+</div>
+<div class="container">
+  <h4 id="trebov" class="text-center">Требования заказчика к АСУ ТП </h4>
+  <p class="text-justify">Основной перечень требований заказчика&nbsp;&nbsp;</p>
+  <ul class="text-justify">
+    <li>Увеличение производительности</li>
+    <li>Установка современного ЧПУ</li>
+    <li>Установка современного комплекта электрооборудования</li>
+    <li>Замена центрального пульта управления</li>
+    <li>Параметры обточки поверхностей катания вагонных колесных пар железнодорожного подвижного состава должны рассчитываться устройством числового программного управления (УЧПУ) в автоматическом режиме</li>
+    <li>Замена всех электродвигателей, в том числе, асинхронный двигатель главного движения и электродвигатели приводов подач</li>
+    <li>Замена электрического шкафа на новый со встроенным устройством числового программного управления (УЧПУ)</li>
+    <li>Обточка колесной пары должна выполняться без переналадки станка и выполняться программным способом – управлением с панели оператора центрального пульта управления</li>
+    <li>УЧПУ станка после модернизации в своем составе должна содержать модуль диагностики состояния узлов и агрегатов колесотокарного станка, производить периодическую запись и хранение полученных данных в автоматическом режиме</li>
+    <li>Панель оператора центрального пульта управления должна содержать русскоязычный интерфейс и обеспечить управление колесотокарным станком в диалоговом режиме</li>
+    <li>Разграничение прав доступа для персонала</li>
+  </ul>
+  <p class="text-justify">Среди основных требований предъявляемых к системе управления важно также выделить&nbsp;<em>надежность системы, безопасность, оперативность срабатывания и простоту в использовании.</em> &nbsp;&nbsp;</p>
+</div>
+<div class="container">
+  <h4 id="razrab_tz" class="text-center">Разработка технического задания </h4>
+  <p class="text-justify">На основании требований предъявляемых к модернизации оборудования в части электроники, автоматики и системы управления станком мною было разработано и согласованно с заказчиком техническое задание. Полный текст Т/З можно посмотреть в разделе "Архив"&nbsp;&nbsp;</p>
+  <div>
+    <p class="text-justify">Основные разделы разработанные при написании технического задания</p>
+    <ul>
+      <li>Перечень и описание работ, обязательных к выполнению при модернизации </li>
+      <li>Требования к системе управления </li>
+      <li>Требования к пульту оператора </li>
+      <li>Требования к программному обеспечению (ПО) станка</li>
+      <li>Требования к электрооборудованию станка</li>
+      <li>Требования к измерительной системе станка</li>
+      <li>Технические характеристики станка после модернизации</li>
+      <li>Требования к документации</li>
+      <li>Пусконаладочные и Приемо-сдаточные работы</li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <h4 id="tkp_project" class="text-center">Технико-экономическое обоснование проекта </h4>
+  <p class="text-justify">При расчете технико-экономических показателей проекта, учитывались следующие факторы:</p>
+  <ul>
+    <li>Стоимость комплектующих, необходимых для внедрения АСУТП</li>
+    <li>затраты на проектирование</li>
+    <li>стоимость программного обеспечения</li>
+    <li>стоимость пусконаладочных работ</li>
+    <li>затраты на инженерные работы</li>
+    <li>Возможные затраты на период гарантийного и послегарантийного обслуживания</li>
+  </ul>
+  <p class="text-justify">Сравнительный анализ поставщиков проводился среди зарекомендовавших себя на рынке промышленной автоматизации производителей, таких как Siemens, Mitsubishi, Allen Brandley, Yaskawa/Omron</p>
+  <p class="text-justify">В техническом плане все перечисленные производители имеют широкою номенклатуру выпускаемых комплектующих и средств автоматизации.
+    В итоге было принято решение разрабатывать систему управления станком на базе комплектующих Yaskawa.
+    Основной критерий выбора был сделан в пользу экономического ценообразования фирмы Yaskawa.
+    В виду коммерческой тайны проекта, у меня нет возможности выложить стоимость комплектующих в закупке. Могу лишь отметить, что комплектующие Yaskawa оказались на 30…40% дешевле цен конкурентов </p>
+</div>
+<div class="container">
+  <h4 id="razrab_doc" class="text-center">Разработка проектной документации </h4>
+  <p class="text-justify">В процессе модернизации станка, была разработана следующая документация:</p>
+  <ul>
+    <li>Инструкция по эксплуатации и обслуживанию электрооборудования;</li>
+    <li>Инструкции по техническому обслуживанию, эксплуатации и наладке электроприводов в объеме поставки производителя;</li>
+    <li>Инструкция оператора;</li>
+    <li>Схемы электрические принципиальные;</li>
+    <li>Схемы электрические монтажные;</li>
+    <li>Перечень элементов;</li>
+    <li>Резервная копия всего программного обеспечения (backup) станка на электронном носителе и инструкция по восстановлению программного обеспечения;</li>
+    <li>Разработка программы электроавтоматики и согласование со станком</li>
+    <li>Разработка новой технологической программы для обточки колесной пары</li>
+    <li>Разработка новой программы человеко-машинного интерфейса (HMI) оператора с функцией сбора и передачи данных и удаленного доступа </li>
+  </ul>
+  <p class="text-left">Ниже представлены фрагменты проектной документации.</p>
+  <p class="text-left">Для увеличения картинки нажмите (+)</p>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/1.jpg"> <img class="img-fluid" src="images/1_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/2.jpg"> <img class="img-fluid" src="images/2_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/3.jpg"> <img class="img-fluid" src="images/3_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/4.jpg"> <img class="img-fluid" src="images/4_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/5.jpg"> <img class="img-fluid" src="images/5_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/6.jpg"> <img class="img-fluid" src="images/6_mini.jpg" alt="..."> </a> </div>
+  </div>
+  <p class="text-justify">Полный текст разработанной документации можно посмотреть в разделе "Архив"</p>
+</div>
+<div class="container">
+  <h4 id="razrab_soft" class="text-center">Разработка программного обеспечения (П.О)</h4>
+  <p class="text-justify">Программное обеспечение контроллера (PLC) и панели оператора (HMI) разработано в средах программирования Motionwork и Creweditor.
+    Большая шасть проекта описана языком функциональных блоков (FBD) и языком структурного текста (ST) стандарта IEC 61131-3</p>
+  <p class="text-left">Фрагменты исходного кода представлены ниже.</p>
+  <p class="text-left">Для увеличения картинки нажмите (+)</p>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/7.jpg"> <img class="img-fluid" src="images/7_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/8.jpg"> <img class="img-fluid" src="images/8_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/9.jpg"> <img class="img-fluid" src="images/9_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/10.jpg"> <img class="img-fluid" src="images/10_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/11.jpg"> <img class="img-fluid" src="images/11_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/12.jpg"> <img class="img-fluid" src="images/12_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/13.jpg"> <img class="img-fluid" src="images/13_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/14.jpg"> <img class="img-fluid" src="images/14_mini.jpg" alt="..."> </a> </div>
+  </div>
+  <p class="text-justify">Полный текст разработанной документации можно посмотреть в разделе "Архив"</p>
+</div>
+<div class="container">
+  <h4 id="pnr_stanka" class="text-center">Пусконаладочные работы</h4>
+  <p class="text-justify">Основные этапы ПНР выполненные на площадках заказчика</p>
+  <ul>
+    <li>Установка станка и оборудования согласно утвержденного фундаментного задания.</li>
+    <li>Прокладка монтажных заготовок от узлов станка и пульта управления до шкафа управления, подключение шкафа управления.</li>
+    <li>Проверка правильности монтажа, подача электропитания.</li>
+    <li>Пусконаладочные работы, проверка функционирования гидравлической системы и приводов станка в наладочном режиме.</li>
+    <li>Проверка работы системы управления во всех режимах работы, проверка работы системы блокировок.</li>
+    <li>Пробное резание, при необходимости правка контура.</li>
+    <li>Обработка профиля, сдача станка Заказчику.</li>
+  </ul>
+  <p class="text-left">Фотографии процесса ПНР представлены ниже</p>
+  <p class="text-left">Для увеличения картинки нажмите (+)</p>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/pnr_1.jpg"> <img class="img-fluid" src="images/pnr_1_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/pnr_2.jpg"> <img class="img-fluid" src="images/pnr_2_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/pnr_3.jpg"> <img class="img-fluid" src="images/pnr_3_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/pnr_4.jpg"> <img class="img-fluid" src="images/pnr_4_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/pnr_5.jpg"> <img class="img-fluid" src="images/pnr_5_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/pnr_6.jpg"> <img class="img-fluid" src="images/pnr_6_mini.jpg" alt="..."> </a> </div>
+  </div>
+  <p class="text-justify">Полный текст разработанной документации можно посмотреть в разделе "Архив"</p>
+</div>
+<div class="container">
+  <h4 id="vvod_stanka" class="text-center">Ввод и сдача оборудования в эксплуатацию</h4>
+  <p class="text-left">Приемка станка осуществлялась в соответствии с требованиями технического задания .</p>
+  <p class="text-left">Были подписаны акты о вводе оборудования в эксплуатацию</p>
+  <p class="text-left">Ниже представлено краткое видео работы станка</p>
+  <div>
+    <iframe width="400" height="238" src="https://www.youtube.com/embed/vDRvjyYGawg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="container">
+  <h4 id="itogi" class="text-center">Итоги</h4>
+  <ul>
+    <li>Разработан устойчивый проект с возможностью дальнейшего совершенствования</li>
+    <li>Повысилось качество и объемы обточки колесных пар в ремонтных депо</li>
+    <li>обеспеченна экономическая целесообразность проекта</li>
+    <li>На август месяц 2020г в эксплуатацию вверено 5 единиц модернизированных станков</li>
+  </ul>
+</div>
+<div class="container">
+  <h4 id="arhiv" class="text-center">Архив</h4>
+  <p class="text-justify">Ниже приведена ссылка с архивом всей документации кроме исходных кодов PLC и HMI</p>
+  <p><a class="button14" href="https://drive.google.com/uc?export=download&id=1mA9KI2QMDwyus5m_PKIHCplLfxbkU9NN" role="button">Скачать архив</a></p>
+  <p></p>
+</div>
+<footer class="text-center my_footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © <a href="index.html">Garanin Nikita</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.3.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.3.1.js"></script> 
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+    </script>
+</body>
+</html>

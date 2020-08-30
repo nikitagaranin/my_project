@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проект мобильного фрезерного станка с ЧПУ</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+<link href="css/mycss.css" rel="stylesheet">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script> 
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script> 
+<script src="js/jquery.fancybox.min.js"></script>
+</head>
+<body class="body_image">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark"> 
+  <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Мои проекты </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="railway.html">Модернизация КТС</a> <a class="dropdown-item" href="milling.html">Проектирование НФС</a> <a class="dropdown-item" href="tech-process.html">Разработка тех.документации</a> <a class="dropdown-item" href="machining.html">Механическая обработка</a> <a class="dropdown-item" href="#">Разное</a> 
+          <!--
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a> 
+--> 
+        </div>
+      </li>
+      <li class="nav-item active"> <a class="nav-link" href="about.html">Обо мне <span class="sr-only">(current)</span></a> </li>
+      <!--          <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>--> 
+      <!--          <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">&nbsp;поиск</button>
+    </form>
+  </div>
+</nav>
+<header>
+  <div class="col-lg-12 mb-4 mt-2 text-center">
+    <h3 class="header-h3">Проект мобильного фрезерного станка с ЧПУ</h3>
+    <h3 class="header-h3">&nbsp;</h3>
+  </div>
+</header>
+<section class="common toc col-xl-5" data-key="toc">
+  <div class="header">Содержание</div>
+  <div class="content">
+    <ul>
+      <ol>
+        <li><a href="#about_project">Общие сведения</a></li>
+        <li><a href="#trebov">Требования заказчика к проекту</a></li>
+        <li><a href="#tkp_project">Маркетинговое исследование и технико–экономическое обоснование проекта</a></li>
+        <li><a href="#razrab_doc">Разработка механической части</a></li>
+        <li><a href="#razrab_soft">Разработка П.О</a></li>
+        <li><a href="#pnr_stanka">Изготовление и сборка </a></li>
+        <li><a href="#itogi">Завершение проекта и сдача оборудования в эксплуатацию</a></li>
+      </ol>
+    </ul>
+  </div>
+</section>
+<div class="container">
+  <h4 id="about_project" class="text-center">Общие сведения </h4>
+  <p>Заказчик проекта - Политехнический колледж №&nbsp;8&nbsp;имени  дважды Героя Советского Союза &nbsp;И.Ф.Павлова</p>
+  <p>Заказчиком была поставлена задача разработать проект  мобильного фрезерного станка с ЧПУ.</p>
+  <p>Основное применение разработанного оборудования:</p>
+  <ul>
+    <li>Изготовление небольших деталей для ювелирной , приборостроительной, радиоэлектронной отрасли</li>
+    <li>Учебное пособие для студентов колледжей и высших учебных заведений</li>
+  </ul>
+  <p>В результате было спроектировано два станка моделей СНТО-181 и СНТО-182</p>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/CHTO181.jpg"> <img class="img-fluid" src="images/milling/CHTO181_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/CHTO182.jpg"> <img class="img-fluid" src="images/milling/CHTO182_mini.jpg" alt="..."> </a> </div>
+  </div>
+  <p>Разница между ними заключалась в том, что на модели 181 можно было обрабатывать легкие материалы такие как алюминий и пластик, а модель 182 предназначалась для обработки более труднообрабатываемых материалов</p>
+  <p>Проектная программа выпуска – до 20 станков в месяц</p>
+</div>
+<div class="container">
+  <h4 id="trebov" class="text-center">Требования заказчика к проекту</h4>
+  <p class="text-justify">Основной перечень требований заказчика&nbsp;&nbsp;</p>
+  <ul class="text-justify">
+    <li>Провести маркетинговое исследование. Анализ рынка, конкурентов.</li>
+    <li>Провести экономический расчёт себестоимости с учётом планируемой программы выпуска.</li>
+    <li>Разработать “гибкую” систему управления станком с возможностью эмулирования различных систем управления таких как Fanuc, Siemens, Heidenhain</li>
+    <li>Разработать методические указания и инструкции для работы с оборудованием</li>
+  </ul>
+</div>
+<div class="container">
+  <h4 id="tkp_project" class="text-center">Маркетинговое исследование и технико–экономическое обоснование проекта</h4>
+  <p class="text-justify">В результате проведенного маркетингового исследования были решены основные вопросы:</p>
+  <ul>
+    <li>Емкость рынка</li>
+    <li>Анализ спроса</li>
+    <li>Анализ деятельности конкурентов</li>
+    <li>Анализ каналов сбыта продукции</li>
+  </ul>
+  <p class="text-justify">При расчете себестоимости учитывались все издержки связанные с производственной и коммерческой деятельностью. Расчёт показал рентабельность проекта при объёме выпуска не ниже 12 станков в месяц.</p>
+  <p class="text-left">Ниже представлены фрагменты маркетинкового исследования.</p>
+  <p class="text-left">Для увеличения картинки нажмите (+)</p>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/mark_1.jpg"> <img class="img-fluid" src="images/milling/mark_1_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/mark_2.jpg"> <img class="img-fluid" src="images/milling/mark_2_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/mark_3.jpg"> <img class="img-fluid" src="images/milling/mark_3_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/mark_4.jpg"> <img class="img-fluid" src="images/milling/mark_4_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/mark_5.jpg"> <img class="img-fluid" src="images/milling/mark_5_mini.jpg" alt="..."> </a> </div>
+  </div>
+  <p class="text-justify"></p>
+</div>
+<div class="container">
+  <h4 id="razrab_doc" class="text-center">Разработка механической части</h4>
+  <p class="text-justify">Механическая часть станка была разработана в САПР SolidWorks. Разработаны 3D модели станков и оформлены чертежи согласно требованиям ЕСКД. Проведены расчеты на нагрузочную способность методом конечных элементов. Разработана вся необходимая технологическая оснастка для изготовления и сборки</p>
+  <p class="text-justify">Материал изготовления станины и портала станка СНТО 181 – дюралюминий Д16Т, предварительно вырезанный на гидроабразивной резке с последующей механической обработкой посадочных поверхностей.</p>
+  <p class="text-justify">Материал изготовления станины и портала станка СНТО 182 – полимербетон с закладными элементами. Состав полимербетона – гранит 3-х разных фракций + песок + эпоксидная смола. Процесс заливки и изготовления смотрите в разделе “изготовление и сборка”..</p>
+  <p class="text-left">Для увеличения картинки нажмите (+)</p>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/181_1.jpg"> <img class="img-fluid" src="images/milling/181_1_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/181_2.jpg"> <img class="img-fluid" src="images/milling/181_2_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/181_3.jpg"> <img class="img-fluid" src="images/milling/181_3_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/182_1.jpg"> <img class="img-fluid" src="images/milling/182_1_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/182_2.jpg"> <img class="img-fluid" src="images/milling/182_2_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/182_3.jpg"> <img class="img-fluid" src="images/milling/182_3_mini.jpg" alt="..."> </a> </div>
+  </div>
+</div>
+<div class="container">
+  <h4 id="razrab_soft" class="text-center">Разработка программного обеспечения (П.О)</h4>
+  <p class="text-justify">В качестве программного обеспечения управлением станка использовалась Mach3 с доработкой графических экранов (screenset) под требования заказчика. Расписывать все достоинства Mach3 я не вижу смысла так как в интернете много статей, тематических форумов и видео роликов. Как результат заказчик получил надежное П.О за приемлемые деньги.</p>
+  <p class="text-justify"></p>
+</div>
+<div class="container">
+  <h4 id="pnr_stanka" class="text-center">Изготовление и сборка</h4>
+  <p class="text-justify">Ниже приставлен процесс изготовления и сборки станка СНТО182. На фотографиях виден практически весь технологический процесс от заливки полимербетона до окончательной сборки.</p>
+  <p class="text-left">Для увеличения картинки нажмите (+)</p>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_1.jpg"> <img class="img-fluid" src="images/milling/build_182_1_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_2.jpg"> <img class="img-fluid" src="images/milling/build_182_2_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_3.jpg"> <img class="img-fluid" src="images/milling/build_182_3_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_4.jpg"> <img class="img-fluid" src="images/milling/build_182_4_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_5.jpg"> <img class="img-fluid" src="images/milling/build_182_5_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_7.jpg"> <img class="img-fluid" src="images/milling/build_182_7_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_8.jpg"> <img class="img-fluid" src="images/milling/build_182_8_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_9.jpg"> <img class="img-fluid" src="images/milling/build_182_9_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_10.jpg"> <img class="img-fluid" src="images/milling/build_182_10_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_11.jpg"> <img class="img-fluid" src="images/milling/build_182_11_mini.jpg" alt="..."> </a> </div>
+    <div class="col-lg-3 col-md-4 col-6 thumb"> <a data-fancybox="gallery" href="images/milling/build_182_12.jpg"> <img class="img-fluid" src="images/milling/build_182_12_mini.jpg" alt="..."> </a> </div>
+  </div>
+</div>
+<div class="container">
+  <h4 id="itogi" class="text-center">Завершение проекта и сдача оборудования в эксплуатацию</h4>
+  <p class="text-left">Заказчику была передана вся разработанная документация в полном объёме. Станки принимали на предмет соответствия полученных результатов и проектной документации. </p>
+  <p class="text-left">Ниже представлено краткое видео работы станка СНТО181 </p>
+  <div>
+    <iframe width="400" height="238" src="https://www.youtube.com/embed/4kCGIvk1GSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <p></p>
+</div>
+<footer class="text-center my_footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © <a href="index.html">Garanin Nikita</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.3.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.3.1.js"></script> 
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+    </script>
+</body>
+</html>
